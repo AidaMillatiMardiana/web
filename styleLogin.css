@@ -1,0 +1,31 @@
+body {
+    background: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+   
+h2 {
+    color: black;
+}
+   
+.login {
+    padding: 1cm;
+    margin: 2cm auto;
+    width: 17em;
+    background: white;
+    border-radius: 3px;
+}
+   
+label {
+    font-size: 10pt;
+    color: black;
+}
+
+input {
+    padding: 8px;
+    width: 95%;
+    background: #efefef;
+    border: 0;
+    font-size: 10pt;
+    margin: 6px 0px;
+}
+   

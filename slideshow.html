@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="styleSlideShow.css">
+  <script src="./jquery-3.6.0.js"></script>
+  <script>
+    var i = 0;
+    $(document).ready(function () {
+      $('.slidertitle, #slider img').hide();
+      showNextImage();
+      setInterval('showNextImage()', 3000);
+    });
+
+    function showNextImage() {
+      i++;
+      $('#sliderImage' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+      $('#title' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+      if (i == 3) {
+        i = 0;
+      }
+    };
+  </script>
+</head>
+
+<body bgcolor="aqua">
+  <p align="right">
+    <a name="top">    
+        <a href="slideshow.html">Home | </a>
+        <a href="cekHarga.html">Cek Harga | </a>
+        <a href="index.html">Log Out</a>
+    </a> 
+  </p>
+  <h2 align="center">The Diana's Hotel Profile</h2>
+  <center>
+  <div id="slider">
+    <img id="sliderImage1" src="./img/gambar1.jpg" style="display:block; margin:auto;">
+    <div class="slidertittle" id="title1">Gambar1</div>
+
+    <img id="sliderImage2" src="./img/gambar2.jpg" style="display:block; margin:auto;">
+    <div class="slidertittle" id="title2">Gambar2</div>
+
+    <img id="sliderImage3" src="./img/gambar3.jpg" style="display:block; margin:auto;">
+    <div class="slidertittle" id="title3">Gambar3</div>
+  </div>
+  </center>
+  <p align="center">The Diana's Hotel merupakan hotel yang terletak di Pulau Bali dan didirikan sejak tahun 2004. Hotel ini merupakan hotel milik pengusaha bernama Aida Millati 
+    Mardiana. Hotel ini dibangun pada tanggal 27 Februari 2004 yang artinya sudah sekitar 17 tahun hotel ini didirikan. Hotel ini terus dikembangkan oleh pemiliknya 
+    dan tentunya memperhatikan saran serta masukan dari customer. Hotel ini juga memiliki banyak sekali fasilitas yang memberikan kenyamanan bagi customer. Hotel ini 
+    didirikan untuk memfasilitasi masyarakat dari dalam maupun luar negeri yang berkunjung ke Bali baik berlibur maupun urusan kerja yang lainnya. Posisi persisnya 
+    sendiri dari hotel ini adalah terletak di pulau Bali Kabupaten Kenanga Jalan Cendrawasih No.101 A, posisinya yang cukup strategis dan terletak berdekatan dengan 
+    beberapa mall besar di Pulau Bali memudahkan pengunjung yang sekaligus ingin berbelanja seperti oleh-oleh khas Bali. Bagi pengunjung yang ingin menetap kurang dari 
+    1 hari 1 malam pun bisa seperti hanya sekedar istirahat, pelayanan yang diberikan pun akan menyesuaikan sesuai dengan type yang dipilih.</p>
+</body>
+
+</html>

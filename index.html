@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOG IN</title>
+	<link rel="stylesheet" type="text/css" href="styleLogin.css">
+</head>
+<body>
+	<h2 align="center">The Diana's Hotel</h2>
+	<div class="login">
+		<form>
+			<div>
+				<label>username</label>
+				<input type="text" name="username" id="username"/>
+			</div>
+			<div>
+				<label>password</label>
+				<input type="password" name="password" id="password"/>
+			</div>
+            <button onclick="validasi()">Log In</button>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
+		if (username != "" && password !="") {
+			<a href="slideshow.html"></a>;
+		}else{
+			alert('Harus terisi');
+		}
+	}
+</script>
+</html>
